@@ -1,3 +1,6 @@
+<?php
+    use yii\helpers\Url;
+?>
 <aside class="main-sidebar">
 
     <!-- sidebar: style can be found in sidebar.less -->
@@ -6,7 +9,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="http://localhost/app-kampus/siska-yii/dashboard/adminlte/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="<?= Url::to('@web/img/profile/user2-160x160.jpg'); ?>" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
                 <p>Zaenal Abidin</p>

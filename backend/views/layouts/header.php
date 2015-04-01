@@ -1,7 +1,10 @@
+<?php
+    use yii\helpers\Url;
+?>
 <header class="main-header">
 
     <!-- Logo -->
-    <a href="#" class="logo"><img src="http://localhost/app-kampus/siska-yii/dashboard/logo.png"/></a>
+    <a href="#" class="logo"><img src="<?= Url::to('@web/img/logo.png'); ?>"/></a>
 
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
