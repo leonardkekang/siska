@@ -14,9 +14,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'tahun_akademik')->textInput(['maxlength' => 9]) ?>
 
-    <?= $form->field($model, 'semester')->dropDownList([ 1 => '1', 0 => '0', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'semester')->dropDownList([ 1 => 'Ganjil', 0 => 'Genap', ], []) ?>
 
-    <?= $form->field($model, 'status')->dropDownList([ 'A' => 'A', 'N' => 'N', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'status')->dropDownList([ 'N' => 'Tidak Aktif', 'A' => 'Aktif', ], []) ?>
 
     <?= $form->field($model, 'tanggal_mulai')->textInput() ?>
 

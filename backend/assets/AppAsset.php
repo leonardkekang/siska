@@ -18,14 +18,17 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
-        'adminlte/css/AdminLTE.min.css',
         'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
         'http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css',
-        'adminlte/css/skins/skin-blue.min.css'
+        'adminlte/css/AdminLTE.min.css',
+        'adminlte/css/skins/skin-blue.min.css',
+        'adminlte/css/datepicker3.css',
+        'adminlte/css/dashboard.css',
     ];
     public $js = [
-        'adminlte/js/app.js'
+        'adminlte/js/app.js',
+        'adminlte/js/jquery.slimscroll.min.js',
+        'adminlte/js/bootstrap-datepicker/bootstrap-datepicker.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
