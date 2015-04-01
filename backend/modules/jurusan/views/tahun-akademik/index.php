@@ -6,14 +6,12 @@ use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tahun Akademiks';
+$this->title = 'Tahun Akademik';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tahun-akademik-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
+    <p class="pull-right">
         <?= Html::a('Create Tahun Akademik', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
@@ -22,12 +20,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'kode_tahun_akademik',
             'tahun_akademik',
             'semester',
             'status',
             'tanggal_mulai',
-            // 'tanggal_berakhir',
+            'tanggal_berakhir',
             // 'created_by',
             // 'updated_by',
             // 'created_at',
